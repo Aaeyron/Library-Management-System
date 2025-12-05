@@ -14,12 +14,13 @@ A full-stack Library Management System built with **React (frontend)** and **Dja
 
 ---
 
+
 ## Frontend Screenshots
 
 ![Admin Dashboard](frontend/screenshots/Dashboard.png)  
 ![Main Homepage](frontend/screenshots/LMSHomePage.png)  
 ![Book List](frontend/screenshots/Books.png)  
-![Statistics Dashboard](frontend/screenshots/StatsDashboard.png)  
+![Statistics Dashboard](frontend/screenshots/StatsDashboard.png)
 
 
 ---
