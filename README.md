@@ -14,14 +14,11 @@ A full-stack Library Management System built with **React (frontend)** and **Dja
 
 ---
 
-
 ## Frontend Screenshots
 
 ![Admin Dashboard](frontend/screenshots/Dashboard.png)  
 ![Main Homepage](frontend/screenshots/LMSHomePage.png)  
-![Book List](frontend/screenshots/Books.png)  
-![Statistics Dashboard](frontend/screenshots/StatsDashboard.png)
-
+![Book List](frontend/screenshots/Books.png)
 
 ---
 
@@ -46,9 +43,3 @@ Check it out here: [Library Management System](https://library-management-system
 - Deployment: Vercel (frontend), Render/Railway (backend)  
 
 ---
-
-## How to Run Locally
-
-1. Clone the repo:  
-```bash
-git clone https://github.com/Aaeyron/Library-Management-System.git
