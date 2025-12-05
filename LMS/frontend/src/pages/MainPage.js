@@ -68,16 +68,6 @@ function MainPage() {
           <p>Check your borrowing and returned books history.</p>
         </div>
       </section>
-
-      {/* Screenshots section */}
-      <section className="screenshots">
-        <h3>App Screenshots</h3>
-        <div className="screenshots-container">
-          <img src="/screenshots/Dashboard.png" alt="Admin Dashboard" />
-          <img src="/screenshots/LMSHomePage.png" alt="Main Homepage" />
-          <img src="/screenshots/Books.png" alt="Book List" />
-        </div>
-      </section>
     </div>
   );
 }
