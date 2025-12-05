@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../PageStyles.css";
 import Navbar from "../components/Navbar";
 import axios from "axios";
+import Screenshots from "../components/Screenshots"; // ✅ import your screenshots component
 
 function MainPage() {
   const navigate = useNavigate();
@@ -73,6 +74,8 @@ function MainPage() {
           {/* Display-only: no buttons */}
         </div>
       </section>
+      {/* Screenshots section */}
+    <Screenshots />
     </div>
   );
 }
