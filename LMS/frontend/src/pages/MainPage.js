@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import "../PageStyles.css";
 import Navbar from "../components/Navbar";
 import axios from "axios";
-import Screenshots from "../components/Screenshots"; // ✅ import your screenshots component
 
 function MainPage() {
   const navigate = useNavigate();
@@ -11,7 +10,6 @@ function MainPage() {
   const [userRole, setUserRole] = useState("User"); // Default role
 
   useEffect(() => {
-    // Get user info from localStorage
     let storedUser = null;
     try {
       storedUser = JSON.parse(localStorage.getItem("user"));
@@ -23,7 +21,6 @@ function MainPage() {
       setUserRole(storedUser.isAdmin ? "Admin" : "User");
     }
 
-    // Fetch all available books for viewing
     fetchAvailableBooks();
   }, []);
 
@@ -59,23 +56,28 @@ function MainPage() {
         <div className="feature-card">
           <h3>Browse Books</h3>
           <p>See all available books and their details.</p>
-          {/* Display-only: no API, no buttons */}
         </div>
 
         <div className="feature-card">
           <h3>Borrow Books</h3>
           <p>Request a book and keep track of your loans.</p>
-          {/* Display-only: no buttons */}
         </div>
 
         <div className="feature-card">
           <h3>Loan History</h3>
           <p>Check your borrowing and returned books history.</p>
-          {/* Display-only: no buttons */}
         </div>
       </section>
+
       {/* Screenshots section */}
-    <Screenshots />
+      <section className="screenshots">
+        <h3>App Screenshots</h3>
+        <div className="screenshots-container">
+          <img src="/screenshots/Dashboard.png" alt="Admin Dashboard" />
+          <img src="/screenshots/LMSHomePage.png" alt="Main Homepage" />
+          <img src="/screenshots/Books.png" alt="Book List" />
+        </div>
+      </section>
     </div>
   );
 }
